@@ -24,7 +24,7 @@ const courses = [
         vote_average: 4,
         price: '$50',
         original_cost: '$99.99',
-        image: '752950_773-272x161.jpg'
+        image: '752950_b773-272x161.jpg'
      },
      {
         id: 4, 
