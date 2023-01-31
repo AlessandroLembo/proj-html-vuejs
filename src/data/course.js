@@ -188,4 +188,4 @@ const testimonials = [
    }
 ]
 
-export { courses, jobs, udemyAffiliate };
+export { courses, jobs, udemyAffiliate, testimonials };
