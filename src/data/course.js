@@ -160,4 +160,17 @@ const jobs = [
     }
 ]
 
-export { courses, jobs };
+const udemyAffiliate = [
+   {
+      option: 'Udemy Affiliate Sales',
+      descritpion: 'Monetize your audience and attract new customers with Udemy',
+      image: 'slide-1.jpg'
+   },
+   {
+      option: 'Become Udemy Affiliate',
+      descritpion: 'Import Udemy courses to your website and earn commission on every sale!',
+      image: 'valentine.jpg'
+   }
+]
+
+export { courses, jobs, udemyAffiliate };
