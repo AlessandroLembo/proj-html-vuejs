@@ -64,7 +64,7 @@ export default {
 
     <!-- section recent courses -->
     <div class="container">
-        <nav class="recent-courses">
+        <nav class="courses">
             <h1>Recent courses</h1>
 
             <!-- to do component to print courses menu -->
@@ -159,6 +159,56 @@ export default {
         </div>
     </section>
 
+    <!-- section popular courses -->
+    <section id="carousel">
+        <div class="container">
+            <div class="courses">
+                <h1>Popular courses</h1>
+                <h3>Discover our most popular courses for self learning</h3>
+            </div>
+
+            <!-- to do component to print cards -->
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn">
+                <button>prev</button>
+                <button>next</button>
+            </div>
+        </div>
+
+    </section>
+
 
 </template>
 
@@ -211,7 +261,7 @@ export default {
 }
 
 // section recent courses
-.recent-courses {
+.courses {
     @include vertical-flex;
     justify-content: center;
 }
@@ -234,5 +284,10 @@ export default {
         display: flex;
         flex-direction: column;
     }
+}
+
+// section popular courses
+#carousel {
+    background-color: aliceblue;
 }
 </style>
