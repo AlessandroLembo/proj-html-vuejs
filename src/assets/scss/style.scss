@@ -9,11 +9,13 @@
 // Generics
 body{
     font-family: $font;
+    height: 100vh;
 }
 
 .container{
     width: 1400px;
     margin: 0 auto;
+    height: $h100;
 }
 
 /* Utils */

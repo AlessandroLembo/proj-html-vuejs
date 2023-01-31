@@ -53,6 +53,13 @@ export default {
 
         </div>
     </section>
+
+    <section id="learning">
+        <div class="container row">
+            <h1>Limitless</h1>
+
+        </div>
+    </section>
     <course-card v-for="course in courses" :key="course.id" :course="course"></course-card>
 
 </template>
@@ -94,5 +101,14 @@ export default {
         border: 1px dashed black;
         height: $h100;
     }
+}
+
+// secction learning
+#learning {
+    height: 500px;
+    background-image: url('../assets/images/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 </style>
