@@ -239,6 +239,30 @@ export default {
 
     </section>
 
+    <!-- section testimonials -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="row">
+
+                <!-- to do component to change image (jumbo slider) -->
+                <div class="big-col description">
+                    <div class="card section-testimonials">
+                        <div>
+                            <h1>Investing</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, obcaecati excepturi
+                                rem culpa neque dignissimos provident voluptatem labore veniam, quae quia cupiditate
+                                maiores? Voluptate doloribus adipisci aut, vitae voluptas quasi.</p>
+                            <div>
+                                <h3>Linda</h3>
+                                <h5>Manager</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 </template>
 
@@ -268,6 +292,7 @@ export default {
 .row {
     @include vertical-flex;
     flex-wrap: wrap;
+    height: $h100;
 
     .col {
         flex-basis: calc(100% / 6);
@@ -343,6 +368,28 @@ export default {
     figure {
         width: 130px;
         height: 130px;
+    }
+}
+
+// section testimonials
+#testimonials {
+    background-image: url('../assets/images/testimonial-1-1917x640-1-1914x639.jpg');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .description {
+        @include vertical-flex;
+    }
+
+    .section-testimonials {
+        background-color: white;
+        width: 600px;
+        height: 480px;
+        padding: 1rem;
+        margin-left: 15rem;
+
     }
 }
 </style>
