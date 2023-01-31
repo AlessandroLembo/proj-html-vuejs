@@ -1,14 +1,15 @@
 <script>
-import CardCourse from './card/CardCourse.vue';
+import { courses } from '../data';
+import CourseCard from './slider/CourseCard.vue';
 export default {
     name: 'App Main',
-    components: { CardCourse }
+    components: { CourseCard }
 
 }
 </script>
 
 <template>
-    <card-course></card-course>
+    <course-card></course-card>
 </template>
 
 <style>
