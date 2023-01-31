@@ -140,6 +140,25 @@ export default {
         </div>
     </div>
 
+    <!-- section subscribe newsletter -->
+    <section id="newsletter">
+        <div class="container row">
+            <div class="our-newsletter">
+                <h3>Subscribe oure newsletter</h3>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour, or randomised words</p>
+            </div>
+
+            <form class="subscribe">
+                <label for="email">YOUR E-MAIL ADDRESS</label>
+                <div>
+                    <input type="text">
+                    <button>SUBSCRIBE</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
 
 </template>
 
@@ -200,5 +219,20 @@ export default {
 .btn {
     @include vertical-flex;
     justify-content: center;
+}
+
+// section newsletter
+#newsletter {
+    background-color: #ff4450;
+    height: 100px;
+
+    .our-newsletter {
+        flex-basis: 50%;
+    }
+
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+    }
 }
 </style>
