@@ -1,6 +1,7 @@
 <script>
 export default {
-    name: 'Search content',
+    name: 'Card course',
+
 }
 </script>
 
