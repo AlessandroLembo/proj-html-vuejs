@@ -19,7 +19,7 @@ export default {
 </script>
 
 <template>
-    <ul>
+    <!-- <ul>
         <li><img :src="courseSrc" :alt="course.name"></li>
         <li>{{ course.category }}</li>
         <li>{{ course.name }}</li>
@@ -27,7 +27,7 @@ export default {
         <li>{{ course.original_cost }}</li>
         <li>{{ course.price }}</li>
 
-    </ul>
+    </ul> -->
 </template>
 
 <style>

@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 
 import '@fontsource/montserrat';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css'
 
 import { library } from '@fortawesome/fontawesome-svg-core';
