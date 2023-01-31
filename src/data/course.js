@@ -173,4 +173,19 @@ const udemyAffiliate = [
    }
 ]
 
+const testimonials = [
+   {
+      claim: 'Paints of the Future',
+      text: 'The response to your MasterStudy has been really overwhelming! Those who participated in the workshop are spreading the word here on campus and the “buzz” is on. The VP of Instruction wants you to come back! Her goal is to have more faculty trained. She also wants to attend a workshop herself. Our President told me Masterstudy needs to be the cornerstone of our success program.”',
+      name: 'Xatashi Froust',
+      role: 'SEO, Froust Inc '
+   },
+   {
+      claim: 'Investing for Your Future',
+      text: 'It is no exaggeration to say this MasterStudy experience was transformative–both professionally and personally. This workshop will long remain a high point of my life. Thanks again…. I am feeling energized and eager to start teaching my class next week. I can’t wait to use all of my new teaching tools. I will absolutely recommend this workshop to other educators!',
+      name: 'Linda Green',
+      role: 'Product Manager, Apple Inc'
+   }
+]
+
 export { courses, jobs, udemyAffiliate };
