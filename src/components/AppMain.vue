@@ -54,13 +54,92 @@ export default {
         </div>
     </section>
 
+    <!-- section Limitless learning -->
     <section id="learning">
         <div class="container row">
             <h1>Limitless</h1>
 
         </div>
     </section>
-    <course-card v-for="course in courses" :key="course.id" :course="course"></course-card>
+
+    <!-- section recent courses -->
+    <div class="container">
+        <nav class="recent-courses">
+            <h1>Recent courses</h1>
+
+            <!-- to do component to print courses menu -->
+        </nav>
+        <!-- Using component to print course's cards -->
+        <div class="row">
+            <div class="col">
+                <div class="card">
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+
+                </div>
+            </div>
+
+        </div>
+
+        <course-card v-for="course in courses" :key="course.id" :course="course"></course-card>
+        <div class="btn">
+            <button>SHOW ALL</button>
+        </div>
+    </div>
+
 
 </template>
 
@@ -110,5 +189,16 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+// section recent courses
+.recent-courses {
+    @include vertical-flex;
+    justify-content: center;
+}
+
+.btn {
+    @include vertical-flex;
+    justify-content: center;
 }
 </style>
