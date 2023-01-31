@@ -9,6 +9,7 @@ export default {
 
 <template>
     <header>
+        <!-- to header, select language and menu navbar -->
         <div class="top-header">
             <div class="container top-header-container">
                 <select name="language" id="language">
@@ -22,14 +23,35 @@ export default {
                 </div>
             </div>
         </div>
-        <div class="centre-header">
-            <div class="container">
 
+        <!-- search bar section in header -->
+        <div class="centre-header">
+            <div class="container header-container">
+                <div class="logo">
+                </div>
+                <!-- to do component for search bar -->
+                <p>search bar</p>
+                <div class="link-centre-header">
+
+                </div>
+                <div class="log-in">
+                </div>
             </div>
         </div>
+
+        <!-- to do component for header menù -->
         <div class="bottom-header">
             <div class="container">
+                <nav class="header-menu">
+                    <ul class="header-container">
+                        <li><a href="">LINK</a></li>
+                        <li><a href="">LINK</a></li>
+                        <li><a href="">LINK</a></li>
+                        <li><a href="">LINK</a></li>
+                        <li><a href="">LINK</a></li>
 
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
@@ -40,22 +62,28 @@ export default {
 
 <style scoped lang="scss">
 @use '../assets/scss/partials/variables' as *;
+@use '../assets/scss/partials/verAlignm' as *;
 
 header {
     height: 190px;
     border: 1px solid black;
+
+    .top-header-container {
+        @include vertical-flex;
+        justify-content: space-between;
+        height: $h100;
+    }
+
+    .header-container {
+        @include vertical-flex;
+        justify-content: center;
+        height: $h100;
+    }
 }
 
 .top-header {
     height: 45px;
     border: 1px solid black;
-
-    .top-header-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: $h100;
-    }
 }
 
 .centre-header {
@@ -65,5 +93,9 @@ header {
 .bottom-header {
     background-color: #273044;
     height: 60px;
+
+    .header-menu {
+        height: 60px;
+    }
 }
 </style>
