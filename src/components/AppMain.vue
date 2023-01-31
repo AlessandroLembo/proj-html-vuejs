@@ -162,7 +162,7 @@ export default {
     <!-- section popular courses -->
     <section id="carousel">
         <div class="container">
-            <div class="courses">
+            <div>
                 <h1>Popular courses</h1>
                 <h3>Discover our most popular courses for self learning</h3>
             </div>
@@ -209,6 +209,36 @@ export default {
 
     </section>
 
+    <!-- section business -->
+    <section id="find-business">
+
+
+        <div class="container">
+            <div class="row">
+                <!-- to do component to get card -->
+                <div class="big-col">
+                    <div class="card section-business">
+                        <figure>
+                            <img src="../assets/images/image_box_1-221x231.png" alt="">
+                        </figure>
+                        <div class="start-business">
+                            <h1>Become</h1>
+                            <p>become an instructor</p>
+                            <button>Start</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="big-col">
+                    <div class="card">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
 
 </template>
 
@@ -238,17 +268,17 @@ export default {
 .row {
     @include vertical-flex;
     flex-wrap: wrap;
+
+    .col {
+        flex-basis: calc(100% / 6);
+        padding: 0.5rem;
+        height: 280px;
+    }
 }
 
-.col {
-    flex-basis: calc(100% / 6);
-    padding: 0.5rem;
-    height: 280px;
-
-    .card {
-        border: 1px dashed black;
-        height: $h100;
-    }
+.card {
+    border: 1px dashed black;
+    height: $h100;
 }
 
 // secction learning
@@ -289,5 +319,30 @@ export default {
 // section popular courses
 #carousel {
     background-color: aliceblue;
+
+    h1,
+    h3 {
+        text-align: center;
+    }
+}
+
+// section business
+#find-business {
+
+    .big-col {
+        flex-basis: 50%;
+        padding: 1rem;
+        height: 280px;
+
+    }
+}
+
+.section-business {
+    @include vertical-flex;
+
+    figure {
+        width: 130px;
+        height: 130px;
+    }
 }
 </style>
