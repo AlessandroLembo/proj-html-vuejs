@@ -147,4 +147,17 @@ const courses = [
 
 ]
 
-    export { courses };
+const jobs = [
+   {
+     job: 'Become an Instructor',
+     description: 'Teach what you love. Masterstudy gives you the tools to create a course.',
+     action: 'START TEACHING'
+   },
+   {
+      job: 'Access For Business',
+      description: 'Get unlimited access to 2,500 of top courses for your team.',
+      action: 'DOING BUSINESS'
+    }
+]
+
+export { courses, jobs };
