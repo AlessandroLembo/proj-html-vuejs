@@ -6,11 +6,14 @@
     box-sizing: border-box;
 }
 
+// Generics
+body{
+    font-family: $font;
+}
+
 .container{
     width: 1400px;
     margin: 0 auto;
 }
 
-body{
-    font-family: $font;
-}
+
