@@ -7,19 +7,23 @@ export default {
     components: { CourseCard, JumboSlider },
     data() {
         return {
-            courses
-            // recentCourse: []
+            courses,
+            recent_courses: []
+
         }
     },
-    // methods: {
-    //     showRecentCourse() {
-    //         this.courses.filter(course => {
-    //             if (course.recentCourse = true) {
-    //                 this.recentCourse.push(course)
-    //             }
-    //         })
-    //     }
-    // }
+    computed: {
+        showRecentCourse() {
+            // const recentCourses = []
+            this.courses.filter(course => {
+                if (course.recentCourse === true) {
+                    this.recent_courses.push(course);
+                }
+                return this.recent_courses;
+            })
+
+        }
+    }
 
 
 }
@@ -81,14 +85,12 @@ export default {
         </nav>
         <!-- Using component to print course's cards -->
         <div class="row">
-            <course-card v-for="course in courses" :key="course.id" :course="course"></course-card>
-
+            <course-card v-for="course in recent_courses" :key="course.id" :course="course"></course-card>
         </div>
-
-
         <div class="btn">
             <button>SHOW ALL</button>
         </div>
+
     </div>
 
     <!-- section subscribe newsletter -->

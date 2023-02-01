@@ -19,7 +19,7 @@ export default {
 </script>
 
 <template>
-    <div v-if="course.recentCourse === true" class="col">
+    <div class="col">
         <div class="card">
             <div class="promo-courses">
                 <img :src="courseSrc" :alt="course.name">
