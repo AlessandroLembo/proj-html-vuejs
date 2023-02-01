@@ -1,5 +1,6 @@
 <script>
 import SearchContent from './header_search/SearchContent.vue';
+
 export default {
     name: 'App Header',
     components: { SearchContent }
@@ -19,7 +20,7 @@ export default {
 
                 <!-- to do component for header navbar -->
                 <div class="header-navbar">
-                    <p>right header</p>
+
                 </div>
             </div>
         </div>

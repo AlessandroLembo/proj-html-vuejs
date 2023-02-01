@@ -37,12 +37,13 @@ export default {
     },
 
     methods: {
-        setCurrentIndex(i) {
-            this.index = i;
-        },
 
         scrollToLeftImage() {
             this.index--;
+        },
+
+        scrollToRightImage() {
+            this.index++;
         }
     }
 
@@ -125,13 +126,12 @@ export default {
 
             <!-- to do component to print cards -->
             <div class="row">
-                <course-card v-for="(course, i) in courses" :key="course.id" :course="course"
-                    :class="{ 'active': course.id < 6 }"></course-card>
+                <course-card v-for=" course in courses" :key="course.id" :course="course"></course-card>
             </div>
 
             <div class="btn">
-                <button @click="setCurrentIndex(i)">prev</button>
-                <button>next</button>
+                <button @click="scrollToLeftImage">prev</button>
+                <button @click="scrollToRightImage">next</button>
             </div>
         </div>
 
