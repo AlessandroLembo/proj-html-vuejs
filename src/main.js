@@ -17,10 +17,11 @@ import { faSlack } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faSkype } from '@fortawesome/free-brands-svg-icons';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 
 
-library.add(solidStar, regularStar, faFacebook, faPinterest, faInstagram, faLinkedin, faGooglePlus, faSlack, faTwitter, faSkype, faYoutube );
+library.add(solidStar, regularStar, faFacebook, faPinterest, faInstagram, faLinkedin, faGooglePlus, faSlack, faTwitter, faSkype, faYoutube, faBars );
 
 import App from './App.vue'
 

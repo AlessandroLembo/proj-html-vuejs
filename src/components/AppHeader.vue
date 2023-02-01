@@ -18,7 +18,7 @@ export default {
                     <option value="Italian">Itlian</option>
                 </select>
 
-                <!-- to do component for header navbar -->
+                <!-- component for header navbar -->
                 <div class="header-navbar">
                     <nav-bar></nav-bar>
                 </div>
@@ -29,9 +29,14 @@ export default {
         <div class="centre-header">
             <div class="container header-container">
                 <div class="logo">
+                    <figure>
+                        <img src="../assets/images/masterstudy-logo.svg" alt="logo">
+                    </figure>
                 </div>
-                <!-- to do component for search bar -->
-                <p>search bar</p>
+
+                <!-- component for search bar -->
+                <search-content></search-content>
+
                 <div class="link-centre-header">
 
                 </div>
@@ -57,8 +62,6 @@ export default {
         </div>
     </header>
 
-    <search-content></search-content>
-
 </template>
 
 <style scoped lang="scss">
@@ -75,11 +78,14 @@ header {
         height: $h100;
     }
 
-    .header-container {
-        @include vertical-flex;
-        justify-content: center;
-        height: $h100;
-    }
+}
+
+.header-container {
+    @include vertical-flex;
+    justify-content: center;
+    height: $h100;
+
+
 }
 
 .top-header {
