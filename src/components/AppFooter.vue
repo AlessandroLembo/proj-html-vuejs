@@ -60,7 +60,10 @@ export default {
                 <figure>
                     <img src="../assets/images/footer-logo2x-50x56.png" alt="logo master study ">
                 </figure>
-                <div>Copiright c 2020.<span>MasterStudy</span>Theme by <span>StylemixThemes</span></div>
+                <span>Copiright c 2020.</span>
+                <a href="#">MasterStudy</a>
+                <span>Theme by</span>
+                <a href="#">StylemixThemes</a>
             </div>
 
         </div>
@@ -136,8 +139,5 @@ footer {
         }
     }
 
-    span {
-        text-decoration: underline;
-    }
 }
 </style>

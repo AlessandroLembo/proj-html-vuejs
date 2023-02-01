@@ -71,7 +71,8 @@ export default {
         </nav>
         <!-- Using component to print course's cards -->
         <div class="row">
-            <div class="col">
+            <course-card v-for="course in courses" :key="course.id" :course="course"></course-card>
+            <!-- <div class="col">
                 <div class="card">
 
                 </div>
@@ -130,11 +131,11 @@ export default {
                 <div class="card">
 
                 </div>
-            </div>
+            </div> -->
 
         </div>
 
-        <course-card v-for="course in courses" :key="course.id" :course="course"></course-card>
+
         <div class="btn">
             <button>SHOW ALL</button>
         </div>
@@ -294,17 +295,20 @@ export default {
     flex-wrap: wrap;
     height: $h100;
 
-    .col {
-        flex-basis: calc(100% / 6);
-        padding: 0.5rem;
-        height: 280px;
-    }
 }
 
-.card {
-    border: 1px dashed black;
-    height: $h100;
-}
+// .col {
+//     flex-basis: calc(100% / 6);
+//     padding: 0.5rem;
+//     height: 280px;
+
+//     .card {
+//         border: 1px dashed black;
+//         height: $h100;
+//     }
+// }
+
+
 
 // secction learning
 #learning {
