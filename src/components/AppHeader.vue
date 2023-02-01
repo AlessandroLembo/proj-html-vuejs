@@ -1,9 +1,16 @@
 <script>
 import SearchContent from './header_search/SearchContent.vue';
 import NavBar from './header_search/NavBar.vue';
+import { options } from '../data'
 export default {
     name: 'App Header',
-    components: { SearchContent, NavBar }
+    components: { SearchContent, NavBar },
+    data() {
+        return {
+            options,
+        }
+    }
+
 
 }
 </script>
@@ -28,8 +35,8 @@ export default {
         <!-- search bar section in header -->
         <div class="centre-header">
             <div class="container header-container">
-                <div class="logo">
-                    <figure>
+                <div>
+                    <figure class="logo">
                         <img src="../assets/images/masterstudy-logo.svg" alt="logo">
                     </figure>
                 </div>
@@ -67,17 +74,12 @@ export default {
             </div>
         </div>
 
-        <!-- to do component for header menù -->
+        <!--  loop for to generate link navbar -->
         <div class="bottom-header">
             <div class="container">
                 <nav class="header-menu">
                     <ul class="header-container">
-                        <li><a href="">LINK</a></li>
-                        <li><a href="">LINK</a></li>
-                        <li><a href="">LINK</a></li>
-                        <li><a href="">LINK</a></li>
-                        <li><a href="">LINK</a></li>
-
+                        <li v-for="option in options"><a href="#">{{ option.category }}</a></li>
                     </ul>
                 </nav>
             </div>
@@ -92,7 +94,6 @@ export default {
 
 header {
     height: 190px;
-    border: 1px solid black;
 
     .top-header-container {
         @include vertical-flex;
@@ -110,12 +111,29 @@ header {
 
 }
 
+// top header, language navbar and icons
 .top-header {
     height: 45px;
-    border: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
     .header-navbar {
         @include vertical-flex;
+    }
+}
+
+#language {
+    border: none;
+    cursor: pointer;
+}
+
+// centre header, logo searchbar and log in
+.logo {
+    width: 180px;
+    height: 35px;
+    margin-right: 1rem;
+
+    img {
+        height: $h100;
     }
 }
 
@@ -158,12 +176,21 @@ a {
     }
 }
 
+// bottom header, menu
 .bottom-header {
     background-color: #273044;
     height: 60px;
 
     .header-menu {
         height: 60px;
+
+        li {
+            padding: 0 2rem;
+        }
+
+        a {
+            color: white;
+        }
     }
 }
 </style>

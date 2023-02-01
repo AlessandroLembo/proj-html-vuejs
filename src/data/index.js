@@ -204,4 +204,27 @@ const testimonials = [
    }
 ]
 
-export { courses, jobs, udemyAffiliate, testimonials };
+const options = [
+   {
+       id: 1,
+       category: 'Business',
+   },
+   {
+       id: 2,
+       category: 'Design',
+   },
+   {
+       id: 3,
+       category: 'Development',
+   },
+   {
+       id: 4,
+       category: 'Lifestyle',
+   },
+   {
+       id: 5,
+       category: 'Office Productivity',
+   }
+]
+
+export { courses, jobs, udemyAffiliate, testimonials, options };

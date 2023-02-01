@@ -1,31 +1,10 @@
 <script>
+import { options } from '../../data'
 export default {
     name: 'Search content',
     data() {
         return {
-            options: [
-                {
-                    id: 1,
-                    category: 'Business',
-                },
-                {
-                    id: 2,
-                    category: 'Design',
-                },
-                {
-                    id: 3,
-                    category: 'Development',
-                },
-                {
-                    id: 4,
-                    category: 'Lifestyle',
-                },
-                {
-                    id: 5,
-                    category: 'Office Productivity',
-                }
-            ],
-
+            options,
             term: ''
         }
     }
@@ -52,6 +31,7 @@ export default {
 @use '../../assets/scss/partials/variables' as *;
 @use '../../assets/scss/partials/verAlignm' as *;
 
+// section filter and search
 .filter-search {
     @include vertical-flex;
     flex-basis: 40%;
@@ -62,11 +42,13 @@ export default {
     cursor: pointer;
 }
 
+// select
 .select {
     @include vertical-flex;
     margin-left: 5px;
 }
 
+// input field
 .search-bar {
     padding: 0 0.5rem;
 
@@ -74,12 +56,17 @@ export default {
         width: 300px;
         height: 35px;
         background-color: aliceblue;
+        border: none;
     }
 
     #btn-search {
         width: 50px;
         height: 35px;
         cursor: pointer;
+        background-color: #457993;
+        border: none;
+        color: white;
+
     }
 }
 </style>
