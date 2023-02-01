@@ -7,6 +7,7 @@ export default {
     components: { CourseCard, JumboSlider },
     data() {
         return {
+            index: 0,
             courses,
             recent_courses: [],
             development_courses: []
@@ -14,6 +15,7 @@ export default {
         }
     },
     computed: {
+        // get an array with recently courses searched
         showRecentCourse() {
             this.courses.filter(course => {
                 if (course.recentCourse === true) {
@@ -23,6 +25,7 @@ export default {
             })
         },
 
+        // get an array with all courses of development
         showDevelopmentCourses() {
             this.courses.filter(course => {
                 if (course.category === 'Development >') {
@@ -30,6 +33,16 @@ export default {
                 }
                 return this.development_courses;
             })
+        }
+    },
+
+    methods: {
+        setCurrentIndex(i) {
+            this.index = i;
+        },
+
+        scrollToLeftImage() {
+            this.index--;
         }
     }
 
@@ -112,40 +125,12 @@ export default {
 
             <!-- to do component to print cards -->
             <div class="row">
-                <div class="col">
-                    <div class="card">
-
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-
-                    </div>
-                </div>
+                <course-card v-for="(course, i) in courses" :key="course.id" :course="course"
+                    :class="{ 'active': course.id < 6 }"></course-card>
             </div>
 
             <div class="btn">
-                <button>prev</button>
+                <button @click="setCurrentIndex(i)">prev</button>
                 <button>next</button>
             </div>
         </div>
@@ -295,6 +280,10 @@ export default {
     h3 {
         text-align: center;
     }
+}
+
+.active {
+    background-color: aqua;
 }
 
 // section business
