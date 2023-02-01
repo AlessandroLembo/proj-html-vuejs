@@ -38,9 +38,31 @@ export default {
                 <search-content></search-content>
 
                 <div class="link-centre-header">
+                    <nav>
+                        <ul class="nav-link">
+                            <li>
+                                <font-awesome-icon class="icon-link" icon="fa-solid fa-bullhorn" />
+                                <a href="#">Become an Instructor</a>
+                            </li>
+                            <li>
+                                <font-awesome-icon class="icon-link" icon="fa-solid fa-briefcase" />
+                                <a href="#">For Enterprise</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+
 
                 </div>
                 <div class="log-in">
+                    <div>
+                        <font-awesome-icon icon="fa-solid fa-user" />
+                        <a href="#">Login in</a>
+                    </div>
+
+                    <button>SIGN UP</button>
+
+                    <font-awesome-icon icon="fa-solid fa-bookmark" />
                 </div>
             </div>
         </div>
@@ -99,6 +121,41 @@ header {
 
 .centre-header {
     height: 85px;
+
+    .nav-link {
+        @include vertical-flex;
+
+        li {
+            padding: 0 0.5rem;
+        }
+    }
+}
+
+.icon-link,
+a {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.icon-link {
+    margin: 0 5px;
+}
+
+.log-in {
+    @include vertical-flex;
+    margin-left: 2rem;
+
+    button {
+        margin: 0 0.5rem;
+        padding: 10px 15px;
+        border-radius: 15px;
+        background-color: #ff4450;
+        border: none;
+        color: white;
+    }
+
+    a {
+        margin-left: 5px;
+    }
 }
 
 .bottom-header {

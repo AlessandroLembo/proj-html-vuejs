@@ -18,10 +18,14 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faSkype } from '@fortawesome/free-brands-svg-icons';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBullhorn } from '@fortawesome/free-solid-svg-icons'; 
+import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 
 
 
-library.add(solidStar, regularStar, faFacebook, faPinterest, faInstagram, faLinkedin, faGooglePlus, faSlack, faTwitter, faSkype, faYoutube, faBars );
+library.add(solidStar, regularStar, faFacebook, faPinterest, faInstagram, faLinkedin, faGooglePlus, faSlack, faTwitter, faSkype, faYoutube, faBars, faBullhorn, faBriefcase, faUser, faBookmark);
 
 import App from './App.vue'
 
