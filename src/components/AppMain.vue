@@ -52,12 +52,15 @@ export default {
 </script>
 
 <template>
-    <!-- to do jumbo slider -->
+    <!-- jumbo slider -->
     <jumbo-slider></jumbo-slider>
     <section id="jumbo-udemy">
-        <h1>titolo</h1>
+        <div class="jumbo-claim">
+            <h1>Udemy Affiliate Sales</h1>
+            <p>Monetize your audience and attract new customers with Udemy</p>
+        </div>
         <figure>
-            <!-- <img src="../assets/images/slide-1.jpg" alt=""> -->
+            <img src="../assets/images/slide-1.jpg" alt="">
             <p>img</p>
         </figure>
     </section>
@@ -202,17 +205,32 @@ export default {
 #jumbo-udemy {
     background-color: #ff4450;
     height: 300px;
-    @include vertical-flex;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 
-    figure {
-        // width: 100%;
-        height: 100%;
+    .jumbo-claim {
+        color: white;
+        padding-left: 18rem;
 
-        img {
-            height: $h100;
-            object-fit: cover;
+        h1 {
+            font-size: 40px;
+            padding-bottom: 1rem;
         }
+
+        p {
+            font-size: 25px;
+        }
+    }
+
+}
+
+figure {
+    height: 100%;
+
+    img {
+        height: $h100;
+        object-fit: cover;
     }
 }
 
@@ -223,19 +241,6 @@ export default {
     height: $h100;
 
 }
-
-// .col {
-//     flex-basis: calc(100% / 6);
-//     padding: 0.5rem;
-//     height: 280px;
-
-//     .card {
-//         border: 1px dashed black;
-//         height: $h100;
-//     }
-// }
-
-
 
 // secction learning
 #learning {
