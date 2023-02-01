@@ -6,7 +6,8 @@ const courses = [
        vote_average: 4,
        price: '$100',
        original_cost: '$199.99', 
-       image: '895786_7b4b_2-272x161.jpg'
+       image: '895786_7b4b_2-272x161.jpg',
+       recentCourse: true
     },
     {
         id: 2, 
@@ -15,7 +16,8 @@ const courses = [
         vote_average: 5,
         price: '$65',
         original_cost: '$129.99',
-        image: '246154_d8b0_3-272x161.jpg'
+        image: '246154_d8b0_3-272x161.jpg',
+        recentCourse: true
      },
      {
         id: 3, 
@@ -24,7 +26,8 @@ const courses = [
         vote_average: 4,
         price: '$50',
         original_cost: '$99.99',
-        image: '752950_b773-272x161.jpg'
+        image: '752950_b773-272x161.jpg',
+        recentCourse: false
      },
      {
         id: 4, 
@@ -33,7 +36,8 @@ const courses = [
         vote_average: 4,
         price: '$100',
         original_cost: '$199.99',
-        image: '1253188_58f7_2-272x161.jpg'
+        image: '1253188_58f7_2-272x161.jpg',
+        recentCourse: false
 
      },
      {
@@ -43,7 +47,8 @@ const courses = [
         vote_average: 4,
         price: '$50',
         original_cost: '$99.99',
-        image: '919872_ed54_6-272x161.jpg'
+        image: '919872_ed54_6-272x161.jpg',
+        recentCourse: false
      },
      {
         id: 6, 
@@ -52,7 +57,8 @@ const courses = [
         vote_average: 4,
         price: '$95',
         original_cost: '$189.99',
-        image: '951684_9c1a_2-272x161.jpg'
+        image: '951684_9c1a_2-272x161.jpg',
+        recentCourse: false
      },
      {
         id: 7, 
@@ -61,7 +67,8 @@ const courses = [
         vote_average: 5,
         price: '$100',
         original_cost: '$199.99',
-        image: '1561458_7f3b-272x161.jpg'
+        image: '1561458_7f3b-272x161.jpg', 
+        recentCourse: true
      },
      {
         id: 8, 
@@ -70,7 +77,8 @@ const courses = [
         vote_average: 4,
         price: '$70',
         original_cost: '$139.99',
-        image: '1208228_d61c_4-272x161.jpg'
+        image: '1208228_d61c_4-272x161.jpg',
+        recentCourse: true
      },
      {
         id: 9, 
@@ -79,7 +87,8 @@ const courses = [
         vote_average: 5,
         price: '$199.99',
         original_cost: '',
-        image: '186792_41e4_4-272x161.jpg'
+        image: '186792_41e4_4-272x161.jpg',
+        recentCourse: true
      },
      {
         id: 10, 
@@ -88,7 +97,8 @@ const courses = [
         vote_average: 4,
         price: '$45',
         original_cost: '$89.99',
-        image: '1776542_30b1-272x161.jpg'
+        image: '1776542_30b1-272x161.jpg',
+        recentCourse: true
      },
      {
         id: 11, 
@@ -97,7 +107,8 @@ const courses = [
         vote_average: 5,
         price: '$10',
         original_cost: '$19.99',
-        image: '949316_2a64_11-272x161.jpg'
+        image: '949316_2a64_11-272x161.jpg', 
+        recentCourse: true
      },
      {
         id: 12, 
@@ -106,7 +117,8 @@ const courses = [
         vote_average: 4,
         price: '$25',
         original_cost: '$49.99',
-        image: '366802_6fcc-272x161.jpg'
+        image: '366802_6fcc-272x161.jpg', 
+        recentCourse: true
      },
      {
         id: 13, 
@@ -115,7 +127,8 @@ const courses = [
         vote_average: 4,
         price: '$18',
         original_cost: '$34.99',
-        image: '381588_2e6d_4-272x161.jpg'
+        image: '381588_2e6d_4-272x161.jpg',
+        recentCourse: true
      },
      {
         id: 14, 
@@ -124,7 +137,8 @@ const courses = [
         vote_average: 4,
         price: '$35',
         original_cost: '$69.99',
-        image: '838056_611a_3-272x161.jpg'
+        image: '838056_611a_3-272x161.jpg',
+        recentCourse: true
      },
      {
         id: 15, 
@@ -133,7 +147,8 @@ const courses = [
         vote_average: 5,
         price: '$10',
         original_cost: '$19.99',
-        image: '1414956_d944_15-272x161.jpg'
+        image: '1414956_d944_15-272x161.jpg',
+        recentCourse: true
      },
      {
         id: 16, 
@@ -142,7 +157,8 @@ const courses = [
         vote_average: 5,
         price: '$35',
         original_cost: '$69.99',
-        image: '1109398_4c13-272x161.jpg'
+        image: '1109398_4c13-272x161.jpg',
+        recentCourse: true
      },
 
 ]

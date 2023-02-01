@@ -8,8 +8,18 @@ export default {
     data() {
         return {
             courses
+            // recentCourse: []
         }
     },
+    // methods: {
+    //     showRecentCourse() {
+    //         this.courses.filter(course => {
+    //             if (course.recentCourse = true) {
+    //                 this.recentCourse.push(course)
+    //             }
+    //         })
+    //     }
+    // }
 
 
 }
@@ -72,66 +82,6 @@ export default {
         <!-- Using component to print course's cards -->
         <div class="row">
             <course-card v-for="course in courses" :key="course.id" :course="course"></course-card>
-            <!-- <div class="col">
-                <div class="card">
-
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-
-                </div>
-            </div> -->
 
         </div>
 

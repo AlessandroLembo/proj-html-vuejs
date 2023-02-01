@@ -19,7 +19,7 @@ export default {
 </script>
 
 <template>
-    <div class="col">
+    <div v-if="course.recentCourse === true" class="col">
         <div class="card">
             <div class="promo-courses">
                 <img :src="courseSrc" :alt="course.name">
@@ -65,7 +65,6 @@ export default {
 
 .promo-courses {
     img {
-        // margin-bottom: 10px;
         height: 140px;
     }
 
@@ -76,17 +75,18 @@ export default {
 }
 
 .title-course {
-    height: 80px;
+    height: 70px;
 }
 
 .card-bottom {
-    height: 60px;
+    height: 70px;
 }
 
 .info-course {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 0.5rem;
 
     .price {
         font-size: 12px;
