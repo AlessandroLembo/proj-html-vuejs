@@ -30,10 +30,16 @@ export default {
                         <h1>SOCIAL NETWORK</h1>
 
                         <!-- to do component to print icons -->
-                        <div class="row">
-                            <div class="md-col">
-                                <font-awesome-icon icon="fa-brands fa-facebook" />
-                            </div>
+                        <div class="flex-icon">
+                            <font-awesome-icon class="social-icon" icon="fa-brands fa-facebook" />
+                            <font-awesome-icon class="social-icon" icon="fa-brands fa-instagram" />
+                            <font-awesome-icon class="social-icon" icon="fa-brands fa-linkedin" />
+                            <font-awesome-icon class="social-icon" icon="fa-brands fa-pinterest" />
+                            <font-awesome-icon class="social-icon" icon="fa-brands fa-twitter" />
+                            <font-awesome-icon class="social-icon" icon="fa-brands fa-slack" />
+                            <font-awesome-icon class="social-icon" icon="fa-brands fa-google-plus" />
+                            <font-awesome-icon class="social-icon" icon="fa-brands fa-skype" />
+
                         </div>
                     </div>
                     <div class="md-col">
@@ -63,11 +69,22 @@ footer {
 .row {
     @include vertical-flex;
     height: $h100;
+
+    .md-col {
+        flex-basis: 25%;
+        height: 280px;
+    }
 }
 
-.md-col {
-    flex-basis: 25%;
-    height: 280px;
-    border: 1px dashed black;
+.flex-icon {
+    display: flex;
+    flex-wrap: wrap;
+
+    .social-icon {
+        flex-basis: 25%;
+        font-size: 40px;
+        height: 50px;
+        padding: 10px 0;
+    }
 }
 </style>
