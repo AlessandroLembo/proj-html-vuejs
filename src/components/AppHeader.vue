@@ -1,9 +1,9 @@
 <script>
 import SearchContent from './header_search/SearchContent.vue';
-
+import NavBar from './header_search/NavBar.vue';
 export default {
     name: 'App Header',
-    components: { SearchContent }
+    components: { SearchContent, NavBar }
 
 }
 </script>
@@ -20,7 +20,7 @@ export default {
 
                 <!-- to do component for header navbar -->
                 <div class="header-navbar">
-
+                    <nav-bar></nav-bar>
                 </div>
             </div>
         </div>

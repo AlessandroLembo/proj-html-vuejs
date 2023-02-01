@@ -32,12 +32,25 @@ export default {
 
 <template>
     <nav>
-        <ul>
-            <li v-for="link in links" :key="link.id"><a href="#"> {{ link }} </a></li>
+        <ul class="nav-bar">
+            <li v-for="link in links" :key="link.id"><a href="#"> {{ link.link }} </a></li>
         </ul>
     </nav>
 </template>
 
-<style>
+<style scoped lang="scss">
+@use '../../assets/scss/partials/variables' as *;
+@use '../../assets/scss/partials/verAlignm' as *;
 
+.nav-bar {
+    @include vertical-flex;
+}
+
+li {
+    padding: 0 10px;
+}
+
+a {
+    color: rgba(0, 0, 0, 0.4);
+}
 </style>
