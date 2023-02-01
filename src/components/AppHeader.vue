@@ -85,6 +85,10 @@ header {
 .top-header {
     height: 45px;
     border: 1px solid black;
+
+    .header-navbar {
+        @include vertical-flex;
+    }
 }
 
 .centre-header {

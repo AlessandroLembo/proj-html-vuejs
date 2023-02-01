@@ -23,7 +23,7 @@ export default {
                     id: 5,
                     link: 'Demos',
                 }
-            ]
+            ],
         }
 
     }
@@ -36,6 +36,14 @@ export default {
             <li v-for="link in links" :key="link.id"><a href="#"> {{ link.link }} </a></li>
         </ul>
     </nav>
+    <div class="icon">
+        <font-awesome-icon class="social-icon" icon="fa-brands fa-facebook" />
+        <font-awesome-icon class="social-icon" icon="fa-brands fa-twitter" />
+        <font-awesome-icon class="social-icon" icon="fa-brands fa-instagram" />
+        <font-awesome-icon class="social-icon" icon="fa-brands fa-linkedin" />
+        <font-awesome-icon class="social-icon" icon="fa-brands fa-google-plus" />
+        <font-awesome-icon icon="fa-brands fa-youtube" />
+    </div>
 </template>
 
 <style scoped lang="scss">
@@ -44,13 +52,23 @@ export default {
 
 .nav-bar {
     @include vertical-flex;
+
+    li {
+        padding: 0 10px;
+    }
+
+    a {
+        color: rgba(0, 0, 0, 0.7);
+    }
 }
 
-li {
-    padding: 0 10px;
-}
+.icon {
+    @include vertical-flex;
+    margin-left: 1.5rem;
 
-a {
-    color: rgba(0, 0, 0, 0.4);
+    .social-icon {
+        padding: 0 5px;
+        color: rgba(0, 0, 0, 0.7);
+    }
 }
 </style>
