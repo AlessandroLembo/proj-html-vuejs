@@ -8,8 +8,10 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faStar as solidStar } from '@fortawesome/free-solid-svg-icons';
 import { faStar as regularStar } from '@fortawesome/free-regular-svg-icons';
+import { faFacebook as brandsFacebook } from '@fortawesome/free-brands-svg-icons';
 
-library.add(solidStar, regularStar);
+
+library.add(solidStar, regularStar, brandsFacebook );
 
 import App from './App.vue'
 
