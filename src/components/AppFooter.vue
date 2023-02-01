@@ -43,14 +43,24 @@ export default {
                         </div>
                     </div>
                     <div class="md-col">
+                        <div class="img-udemy">
+                            <figure>
+                                <img src="../assets/images/Top-udemy-courses-90-percent-off.jpg" alt="Udemy">
+                            </figure>
+                        </div>
 
                     </div>
                 </div>
 
             </div>
-            <hr>
+        </div>
+        <hr>
+        <div class="container">
             <div class="copyright">
-
+                <figure>
+                    <img src="../assets/images/footer-logo2x-50x56.png" alt="logo master study ">
+                </figure>
+                <div>Copiright c 2020.<span>MasterStudy</span>Theme by <span>StylemixThemes</span></div>
             </div>
 
         </div>
@@ -63,7 +73,13 @@ export default {
 
 footer {
     background-color: #273044;
-    min-height: 100px;
+    min-height: 200px;
+}
+
+// Footer Contacts
+.info {
+    height: $h100;
+    padding: 2rem 0;
 }
 
 .row {
@@ -72,7 +88,13 @@ footer {
 
     .md-col {
         flex-basis: 25%;
-        height: 280px;
+        @include vertical-flex;
+        padding: 0 1rem;
+
+        figure {
+            width: 250px;
+            height: 130px;
+        }
     }
 }
 
@@ -85,6 +107,37 @@ footer {
         font-size: 40px;
         height: 50px;
         padding: 10px 0;
+    }
+}
+
+.img-udemy {
+    @include vertical-flex;
+    justify-content: center;
+    height: $h100;
+
+    img {
+        height: $h100;
+    }
+}
+
+// Footer copyright
+
+.copyright {
+    @include vertical-flex;
+    padding: 1rem 0;
+
+    figure {
+        width: 35px;
+        height: 35px;
+        margin-right: 1rem;
+
+        img {
+            height: $h100;
+        }
+    }
+
+    span {
+        text-decoration: underline;
     }
 }
 </style>
