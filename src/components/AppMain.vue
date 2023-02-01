@@ -60,15 +60,14 @@ export default {
             <p>Monetize your audience and attract new customers with Udemy</p>
         </div>
         <figure>
-            <img src="../assets/images/slide-1.jpg" alt="">
-            <p>img</p>
+            <img src="../assets/images/slide-1.jpg" alt="jumbo">
         </figure>
     </section>
 
-    <!-- to do Course card -->
+    <!-- Course card component -->
     <section id="development-courses">
         <div class="container">
-            <h1>development courses</h1>
+            <h1>Popular Development Courses</h1>
             <div class="row">
                 <course-card v-for="course in development_courses" :key="course.id" :course="course"></course-card>
             </div>
@@ -208,6 +207,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 2rem;
 
     .jumbo-claim {
         color: white;
@@ -235,6 +235,16 @@ figure {
 }
 
 // section development courses
+#development-courses {
+    padding: 2.5rem 0;
+
+    h1 {
+        font-weight: 800;
+        padding: 1.5rem 0;
+        margin-left: 1rem;
+    }
+}
+
 .row {
     @include vertical-flex;
     flex-wrap: wrap;

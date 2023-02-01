@@ -9,6 +9,8 @@ export default {
     props: {
         course: Object
     },
+
+    // computed to build string to print images
     computed: {
         courseSrc() {
             const url = new URL(`../../assets/images/${this.course.image}`, import.meta.url)
@@ -21,6 +23,8 @@ export default {
 <template>
     <div class="col">
         <div class="card">
+
+            <!-- item's card -->
             <div class="promo-courses">
                 <img :src="courseSrc" :alt="course.name">
                 <div class="description">
@@ -52,14 +56,15 @@ export default {
 @use '../../assets/scss/partials/variables' as *;
 @use '../../assets/scss/partials/verAlignm' as *;
 
+// structure of the card
 .col {
     flex-basis: calc(100% / 6);
     padding: 0.5rem;
     height: 280px;
 
     .card {
-        border: 1px dashed black;
         height: $h100;
+        border: 1px solid rgba(0, 0, 0, 0.3);
     }
 }
 
@@ -76,6 +81,15 @@ export default {
 
 .title-course {
     height: 70px;
+
+    h6 {
+        color: rgba(0, 0, 0, 0.3);
+        padding-bottom: 10px;
+    }
+
+    h5 {
+        padding-bottom: 10px;
+    }
 }
 
 .card-bottom {
