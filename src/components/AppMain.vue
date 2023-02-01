@@ -8,20 +8,28 @@ export default {
     data() {
         return {
             courses,
-            recent_courses: []
+            recent_courses: [],
+            development_courses: []
 
         }
     },
     computed: {
         showRecentCourse() {
-            // const recentCourses = []
             this.courses.filter(course => {
                 if (course.recentCourse === true) {
                     this.recent_courses.push(course);
                 }
                 return this.recent_courses;
             })
+        },
 
+        showDevelopmentCourses() {
+            this.courses.filter(course => {
+                if (course.category === 'Development >') {
+                    this.development_courses.push(course);
+                }
+                return this.development_courses;
+            })
         }
     }
 
@@ -44,27 +52,9 @@ export default {
     <section id="development-courses">
         <div class="container">
             <h1>development courses</h1>
-            <div class="container row">
-                <div class="col">
-                    <div class="card"></div>
-                </div>
-                <div class="col">
-                    <div class="card"></div>
-                </div>
-                <div class="col">
-                    <div class="card"></div>
-                </div>
-                <div class="col">
-                    <div class="card"></div>
-                </div>
-                <div class="col">
-                    <div class="card"></div>
-                </div>
-                <div class="col">
-                    <div class="card"></div>
-                </div>
+            <div class="row">
+                <course-card v-for="course in development_courses" :key="course.id" :course="course"></course-card>
             </div>
-
         </div>
     </section>
 
