@@ -3,6 +3,7 @@ import { courses_groups, categories, courses, jobs } from '../data';
 import CourseCard from './mainComponent/CourseCard.vue';
 import JumboSlider from './mainComponent/JumboSlider.vue';
 import Business from './mainComponent/Business.vue';
+
 export default {
     name: 'App Main',
     components: { CourseCard, JumboSlider, Business, },
@@ -44,19 +45,23 @@ export default {
     },
 
     methods: {
+        // return at first group of courses
         returnToFirstGroup() {
             if (this.index === this.courses_groups.length) this.index = 0;
         },
 
+        // return at last group of courses
         returnToLastGroup() {
             if (this.index < 0) this.index = this.courses_groups.length - 1;
         },
 
+        // scroll to left
         scrollToLeftGroup() {
             this.index--;
             this.returnToLastGroup();
         },
 
+        // scroll to right
         scrollToRightGroup() {
             this.index++;
             this.returnToFirstGroup();
