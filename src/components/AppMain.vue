@@ -401,7 +401,6 @@ figure {
     }
 }
 
-
 // section testimonials
 
 #testimonials {

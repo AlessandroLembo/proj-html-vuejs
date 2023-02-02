@@ -10,7 +10,7 @@ export default {
             <div class="info">
                 <div class="row">
                     <div class="md-col">
-                        <h1>About</h1>
+                        <h1>ABOUT</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nam assumenda nemo. In eaque
                             possimus temporibus, deserunt omnis rem alias porro, exercitationem reiciendis tempora
                             impedit! Itaque ratione assumenda tempore quam!</p>
@@ -23,7 +23,7 @@ export default {
                                 <h5>tel.: +1 212 458 300 32</h5>
                                 <h5> Fax: +1 212 375 2414</h5>
                             </div>
-                            <div>info@masterstudy.com</div>
+                            <div class="email">info@masterstudy.com</div>
                         </address>
                     </div>
                     <div class="md-col">
@@ -77,6 +77,7 @@ export default {
 footer {
     background-color: #273044;
     min-height: 200px;
+    color: white;
 }
 
 // Footer Contacts
@@ -86,19 +87,36 @@ footer {
 }
 
 .row {
+    display: flex;
+    align-items: flex-start;
+    height: $h100;
+}
+
+.md-col {
+    flex-basis: 25%;
     @include vertical-flex;
+    padding: 0 1rem;
     height: $h100;
 
-    .md-col {
-        flex-basis: 25%;
-        @include vertical-flex;
-        padding: 0 1rem;
-
-        figure {
-            width: 250px;
-            height: 130px;
-        }
+    figure {
+        width: 250px;
+        height: 130px;
     }
+
+    h1 {
+        font-size: 25px;
+        padding-bottom: 2rem;
+    }
+}
+
+.contact {
+    h5 {
+        padding: 1rem 0;
+    }
+}
+
+.email {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .flex-icon {
@@ -137,6 +155,11 @@ footer {
         img {
             height: $h100;
         }
+    }
+
+    a {
+        color: white;
+        text-decoration: underline;
     }
 
 }
