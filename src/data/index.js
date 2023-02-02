@@ -341,4 +341,39 @@ const options = [
    }
 ]
 
-export { courses, jobs, udemyAffiliate, testimonials, options, courses_groups };
+const categories = [
+   {
+      id: 1,
+      category: 'All Categories'
+   },
+   {
+      id: 2,
+      category: 'Business'
+   },
+   {
+      id: 3,
+      category: 'Design'
+   },
+   {
+      id: 4,
+      category: 'Development'
+   },
+   {
+      id: 5,
+      category: 'IT & Software'
+   },
+   {
+      id: 6,
+      category: 'Lifestyle'
+   },
+   {
+      id: 7,
+      category: 'Marketing'
+   },
+   {
+      id: 8,
+      category: 'Office Productivity'
+   }
+]
+
+export { courses, jobs, udemyAffiliate, testimonials, options, courses_groups, categories };

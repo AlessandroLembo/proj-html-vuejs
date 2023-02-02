@@ -1,6 +1,6 @@
 <script>
 import { courses } from '../data';
-import { courses_groups } from '../data';
+import { courses_groups, categories } from '../data';
 import CourseCard from './slider/CourseCard.vue';
 import JumboSlider from './slider/JumboSlider.vue';
 export default {
@@ -11,6 +11,7 @@ export default {
             index: 0,
             courses,
             courses_groups,
+            categories,
             recent_courses: [],
             development_courses: [],
 
@@ -97,10 +98,10 @@ export default {
 
     <!-- section recent courses -->
     <div class="container">
-        <nav class="courses">
-            <h1>Recent courses</h1>
 
-            <!-- to do component to print courses menu -->
+        <h1 id="recent-courses">Recent courses</h1>
+        <nav class="courses">
+            <div v-for="category in categories" :key="category.id">{{ category.category }}</div>
         </nav>
         <!-- Using component to print course's cards -->
         <div class="row">
@@ -274,9 +275,20 @@ figure {
 }
 
 // section recent courses
+#recent-courses {
+    @include vertical-flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
 .courses {
     @include vertical-flex;
     justify-content: center;
+    height: 70px;
+
+    div {
+        padding: 0 1rem;
+    }
 }
 
 .btn {
