@@ -1,5 +1,6 @@
 <script>
 import { courses_groups, categories, courses, jobs } from '../data';
+
 import CourseCard from './mainComponent/CourseCard.vue';
 import JumboSlider from './mainComponent/JumboSlider.vue';
 import Business from './mainComponent/Business.vue';
@@ -30,7 +31,6 @@ export default {
                 return this.recent_courses;
             })
         },
-
 
         // get an array with all courses of development
         showDevelopmentCourses() {
