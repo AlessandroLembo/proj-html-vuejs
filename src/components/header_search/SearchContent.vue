@@ -63,7 +63,7 @@ export default {
         width: 50px;
         height: 35px;
         cursor: pointer;
-        background-color: #457993;
+        background-color: #dd7373;
         color: white;
 
     }

@@ -367,7 +367,7 @@ figure {
     }
 
     button {
-        background-color: #457993;
+        background-color: #dd7373;
         padding: 10px 15px;
     }
 }
@@ -393,7 +393,7 @@ figure {
     padding: 2rem 0 3rem;
 
     button {
-        background-color: aqua;
+        background-color: #dd7373;
         padding: 10px 15px;
         border: 1px solid rgba(0, 0, 0, 0.3);
         margin: 0 10px;
