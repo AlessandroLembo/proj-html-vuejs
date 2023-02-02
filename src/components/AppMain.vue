@@ -1,5 +1,6 @@
 <script>
 import { courses } from '../data';
+import { courses_groups } from '../data';
 import CourseCard from './slider/CourseCard.vue';
 import JumboSlider from './slider/JumboSlider.vue';
 export default {
@@ -9,8 +10,9 @@ export default {
         return {
             index: 0,
             courses,
+            courses_groups,
             recent_courses: [],
-            development_courses: []
+            development_courses: [],
 
         }
     },
@@ -25,6 +27,7 @@ export default {
             })
         },
 
+
         // get an array with all courses of development
         showDevelopmentCourses() {
             this.courses.filter(course => {
@@ -33,8 +36,11 @@ export default {
                 }
                 return this.development_courses;
             })
-        }
+        },
+
     },
+
+
 
     methods: {
 
@@ -44,6 +50,7 @@ export default {
 
         scrollToRightImage() {
             this.index++;
+
         }
     }
 
@@ -53,7 +60,6 @@ export default {
 
 <template>
     <!-- jumbo slider -->
-    <jumbo-slider></jumbo-slider>
     <section id="jumbo-udemy">
         <div class="jumbo-claim">
             <h1>Udemy Affiliate Sales</h1>
@@ -126,15 +132,14 @@ export default {
                 <h3>Discover our most popular courses for self learning</h3>
             </div>
 
-            <!-- to do component to print cards -->
-            <div class="row">
-                <course-card v-for=" course in courses" :key="course.id" :course="course"></course-card>
-            </div>
+            <!-- slider -->
+            <jumbo-slider v-for="group in courses_groups" :key="group.id" :group="group"></jumbo-slider>
 
             <div class="btn">
                 <button @click="scrollToLeftImage">prev</button>
                 <button @click="scrollToRightImage">next</button>
             </div>
+
         </div>
 
     </section>
@@ -247,7 +252,6 @@ figure {
 
 .row {
     @include vertical-flex;
-    flex-wrap: wrap;
     height: $h100;
 
 }
