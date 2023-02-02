@@ -183,14 +183,14 @@ export default {
                 <!-- to do component to change image (jumbo slider) -->
                 <div class="big-col description">
                     <div class="card section-testimonials">
-                        <div>
-                            <h1>Investing</h1>
+                        <div class="text-testimonials">
+                            <h1>Investing for Your Future</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, obcaecati excepturi
                                 rem culpa neque dignissimos provident voluptatem labore veniam, quae quia cupiditate
                                 maiores? Voluptate doloribus adipisci aut, vitae voluptas quasi.</p>
                             <div>
                                 <h3>Linda</h3>
-                                <h5>Manager</h5>
+                                <h5>Product Manage, Apple Inc</h5>
                             </div>
                         </div>
                     </div>
@@ -403,6 +403,7 @@ figure {
 
 
 // section testimonials
+
 #testimonials {
     background-image: url('../assets/images/testimonial-1-1917x640-1-1914x639.jpg');
     height: 600px;
@@ -421,6 +422,24 @@ figure {
         padding: 1rem;
         margin-left: 15rem;
 
+    }
+}
+
+.text-testimonials {
+    padding: 5rem 2rem 2rem;
+
+    h1 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    p {
+        padding: 1.5rem 0;
+    }
+
+    p,
+    h5 {
+        color: rgba(0, 0, 0, 0.7);
     }
 }
 </style>
