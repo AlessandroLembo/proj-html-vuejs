@@ -41,13 +41,23 @@ export default {
     },
 
     methods: {
-
-        scrollToLeftImage() {
-            this.index--;
+        returnToFirstGroup() {
+            if (this.index === this.courses_groups.length) this.index = 0;
         },
 
-        scrollToRightImage() {
+        returnToLastGroup() {
+            if (this.index < 0) this.index = this.courses_groups.length - 1;
+        },
+
+        scrollToLeftGroup() {
+            this.index--;
+            this.returnToLastGroup();
+        },
+
+        scrollToRightGroup() {
             this.index++;
+            this.returnToFirstGroup();
+
         }
     }
 
@@ -134,8 +144,8 @@ export default {
                 v-show="i === index"></jumbo-slider>
 
             <div class="btn">
-                <button @click="scrollToLeftImage">prev</button>
-                <button @click="scrollToRightImage">next</button>
+                <button @click="scrollToLeftGroup">prev</button>
+                <button @click="scrollToRightGroup">next</button>
             </div>
 
         </div>
