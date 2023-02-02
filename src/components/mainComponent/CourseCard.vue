@@ -1,6 +1,7 @@
 <script>
 import { courses } from '../../data/';
 export default {
+    name: 'Course Card',
     data() {
         return {
             courses

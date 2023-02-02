@@ -1,17 +1,18 @@
 <script>
-import { courses_groups, categories, courses } from '../data';
-import CourseCard from './slider/CourseCard.vue';
-import JumboSlider from './slider/JumboSlider.vue';
-import UdemyAffiliate from './UdemyAffiliate.vue';
+import { courses_groups, categories, courses, jobs } from '../data';
+import CourseCard from './mainComponent/CourseCard.vue';
+import JumboSlider from './mainComponent/JumboSlider.vue';
+import Business from './mainComponent/Business.vue';
 export default {
     name: 'App Main',
-    components: { CourseCard, JumboSlider, UdemyAffiliate },
+    components: { CourseCard, JumboSlider, Business },
     data() {
         return {
             index: 0,
             courses,
             courses_groups,
             categories,
+            jobs,
             recent_courses: [],
             development_courses: [],
 
@@ -76,7 +77,6 @@ export default {
         <figure>
             <img src="../assets/images/slide-1.jpg" alt="jumbo">
         </figure>
-        <udemy-affiliate></udemy-affiliate>
     </section>
 
     <!-- Course card component -->
@@ -161,7 +161,7 @@ export default {
         <div class="container">
             <div class="row">
                 <!-- to do component to get card -->
-                <div class="big-col">
+                <!-- <div class="big-col">
                     <div class="card section-business">
                         <figure>
                             <img src="../assets/images/image_box_1-221x231.png" alt="">
@@ -177,8 +177,8 @@ export default {
                     <div class="card">
 
                     </div>
-                </div>
-
+                </div> -->
+                <business v-for="job in jobs" :key="job.description" :job="job"></business>
             </div>
         </div>
 
@@ -322,29 +322,25 @@ figure {
     }
 }
 
-.active {
-    background-color: aqua;
-}
-
 // section business
-#find-business {
+// #find-business {
 
-    .big-col {
-        flex-basis: 50%;
-        padding: 1rem;
-        height: 280px;
+//     .big-col {
+//         flex-basis: 50%;
+//         padding: 1rem;
+//         height: 280px;
 
-    }
-}
+//     }
+// }
 
-.section-business {
-    @include vertical-flex;
+// .section-business {
+//     @include vertical-flex;
 
-    figure {
-        width: 130px;
-        height: 130px;
-    }
-}
+//     figure {
+//         width: 130px;
+//         height: 130px;
+//     }
+// }
 
 // section testimonials
 #testimonials {

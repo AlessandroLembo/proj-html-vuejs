@@ -281,42 +281,17 @@ const jobs = [
    {
      job: 'Become an Instructor',
      description: 'Teach what you love. Masterstudy gives you the tools to create a course.',
-     action: 'START TEACHING'
+     action: 'START TEACHING',
+     image: 'image_box_1-221x231.png'
    },
    {
       job: 'Access For Business',
       description: 'Get unlimited access to 2,500 of top courses for your team.',
-      action: 'DOING BUSINESS'
+      action: 'DOING BUSINESS',
+      image: 'image_box_2-234x231.png'
     }
 ]
 
-const udemyAffiliate = [
-   {
-      option: 'Udemy Affiliate Sales',
-      descritpion: 'Monetize your audience and attract new customers with Udemy',
-      image: 'slide-1.jpg'
-   },
-   {
-      option: 'Become Udemy Affiliate',
-      descritpion: 'Import Udemy courses to your website and earn commission on every sale!',
-      image: 'valentine.jpg'
-   }
-]
-
-const testimonials = [
-   {
-      claim: 'Paints of the Future',
-      text: 'The response to your MasterStudy has been really overwhelming! Those who participated in the workshop are spreading the word here on campus and the “buzz” is on. The VP of Instruction wants you to come back! Her goal is to have more faculty trained. She also wants to attend a workshop herself. Our President told me Masterstudy needs to be the cornerstone of our success program.”',
-      name: 'Xatashi Froust',
-      role: 'SEO, Froust Inc '
-   },
-   {
-      claim: 'Investing for Your Future',
-      text: 'It is no exaggeration to say this MasterStudy experience was transformative–both professionally and personally. This workshop will long remain a high point of my life. Thanks again…. I am feeling energized and eager to start teaching my class next week. I can’t wait to use all of my new teaching tools. I will absolutely recommend this workshop to other educators!',
-      name: 'Linda Green',
-      role: 'Product Manager, Apple Inc'
-   }
-]
 
 const options = [
    {
@@ -376,4 +351,4 @@ const categories = [
    }
 ]
 
-export { courses, jobs, udemyAffiliate, testimonials, options, courses_groups, categories };
+export { courses, jobs, options, courses_groups, categories };
