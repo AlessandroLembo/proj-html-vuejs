@@ -40,8 +40,6 @@ export default {
 
     },
 
-
-
     methods: {
 
         scrollToLeftImage() {
@@ -50,7 +48,6 @@ export default {
 
         scrollToRightImage() {
             this.index++;
-
         }
     }
 
@@ -133,7 +130,8 @@ export default {
             </div>
 
             <!-- slider -->
-            <jumbo-slider v-for="group in courses_groups" :key="group.id" :group="group"></jumbo-slider>
+            <jumbo-slider v-for="(group, i) in courses_groups" :key="group.id" :group="group"
+                v-show="i === index"></jumbo-slider>
 
             <div class="btn">
                 <button @click="scrollToLeftImage">prev</button>

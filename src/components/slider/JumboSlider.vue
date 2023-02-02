@@ -208,6 +208,7 @@ export default {
 </script>
 
 <template>
+
     <div class="row-courses">
         <div class="col">
             <div class="card">
@@ -318,6 +319,7 @@ export default {
             </div>
         </div>
     </div>
+
 </template>
 
 <style scoped lang="scss">
