@@ -8,6 +8,7 @@ export default {
     components: { CourseCard, JumboSlider, Business, },
     data() {
         return {
+            term: '',
             index: 0,
             courses,
             courses_groups,
@@ -115,7 +116,7 @@ export default {
             <course-card v-for="course in recent_courses" :key="course.id" :course="course"></course-card>
         </div>
         <div class="btn">
-            <button>SHOW ALL</button>
+            <button class="btn-shaw">SHOW ALL</button>
         </div>
 
     </div>
@@ -129,13 +130,15 @@ export default {
                     alteration in some form, by injected humour, or randomised words</p>
             </div>
 
-            <form class="subscribe">
-                <label for="email">YOUR E-MAIL ADDRESS</label>
-                <div>
-                    <input type="text">
-                    <button>SUBSCRIBE</button>
-                </div>
-            </form>
+            <div class="subscribe">
+                <form @submit="prevent" id="register">
+                    <label for="email">YOUR E-MAIL ADDRESS</label>
+                    <div class="search-field">
+                        <input type="text" id="email-field" v-model.trim="term" placeholder="Enter your E-mail">
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -293,12 +296,12 @@ figure {
 }
 
 
-
 // section recent courses
 #recent-courses {
     @include vertical-flex;
     justify-content: center;
     padding-top: 3rem;
+
 }
 
 .courses {
@@ -314,30 +317,108 @@ figure {
 .btn {
     @include vertical-flex;
     justify-content: center;
+
+    .btn-shaw {
+        background-color: #ff4450;
+        border-radius: 20px;
+        padding: 10px 15px;
+        margin: 2rem 0 3rem;
+    }
 }
 
 // section newsletter
 #newsletter {
     background-color: #ff4450;
-    height: 100px;
+    height: 130px;
+    color: white;
 
-    .our-newsletter {
-        flex-basis: 50%;
+    .row {
+        justify-content: center;
     }
 
-    .subscribe {
+}
+
+.our-newsletter {
+    flex-basis: 50%;
+    padding-right: 2rem;
+
+    p {
+        font-size: 14px;
+    }
+}
+
+.subscribe {
+    height: $h100;
+
+    #register {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        height: $h100;
+    }
+}
+
+.search-field {
+    padding-top: 10px;
+
+    #email-field {
+        height: $h100;
+        width: 250px;
+    }
+
+    button {
+        background-color: #457993;
+        padding: 10px 15px;
     }
 }
 
 // section popular courses
+
+/*
+<section id="carousel">
+        <div class="container">
+            <div>
+                <h1>Popular courses</h1>
+                <h3>Discover our most popular courses for self learning</h3>
+            </div>
+
+            <!-- slider -->
+            <jumbo-slider v-for="(group, i) in courses_groups" :key="group.id" :group="group"
+                v-show="i === index"></jumbo-slider>
+
+            <div class="btn">
+                <button @click="scrollToLeftGroup">prev</button>
+                <button @click="scrollToRightGroup">next</button>
+            </div>
+
+        </div>
+
+    </section>
+*/
 #carousel {
     background-color: aliceblue;
+    padding-top: 3rem;
 
     h1,
     h3 {
         text-align: center;
+    }
+
+    h3 {
+        padding: 5px 0 15px;
+        color: rgba(0, 0, 0, 0.8);
+    }
+}
+
+.btn {
+    padding: 2rem 0 3rem;
+
+    button {
+        background-color: aqua;
+        padding: 10px 15px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        margin: 0 10px;
+
     }
 }
 
