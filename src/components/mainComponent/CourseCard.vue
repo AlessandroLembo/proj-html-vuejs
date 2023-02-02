@@ -1,7 +1,9 @@
 <script>
 import { courses } from '../../data/';
+import TransformVote from './TransformVote.vue';
 export default {
     name: 'Course Card',
+    components: { TransformVote },
     data() {
         return {
             courses
@@ -38,7 +40,8 @@ export default {
                     <div class="card-bottom">
                         <hr>
                         <div class="info-course">
-                            <div>{{ course.vote_average }}</div>
+                            <!-- <div>{{ course.vote_average }}</div> -->
+                            <transform-vote :vote="course.vote_average"></transform-vote>
                             <div class="price">
                                 <div>{{ course.original_cost }}</div>
                                 <div>{{ course.price }}</div>

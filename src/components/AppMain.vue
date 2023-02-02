@@ -5,7 +5,7 @@ import JumboSlider from './mainComponent/JumboSlider.vue';
 import Business from './mainComponent/Business.vue';
 export default {
     name: 'App Main',
-    components: { CourseCard, JumboSlider, Business },
+    components: { CourseCard, JumboSlider, Business, },
     data() {
         return {
             index: 0,
