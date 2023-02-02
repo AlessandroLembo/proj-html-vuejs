@@ -160,24 +160,6 @@ export default {
 
         <div class="container">
             <div class="row">
-                <!-- to do component to get card -->
-                <!-- <div class="big-col">
-                    <div class="card section-business">
-                        <figure>
-                            <img src="../assets/images/image_box_1-221x231.png" alt="">
-                        </figure>
-                        <div class="start-business">
-                            <h1>Become</h1>
-                            <p>become an instructor</p>
-                            <button>Start</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="big-col">
-                    <div class="card">
-
-                    </div>
-                </div> -->
                 <business v-for="job in jobs" :key="job.description" :job="job"></business>
             </div>
         </div>
@@ -322,25 +304,6 @@ figure {
     }
 }
 
-// section business
-// #find-business {
-
-//     .big-col {
-//         flex-basis: 50%;
-//         padding: 1rem;
-//         height: 280px;
-
-//     }
-// }
-
-// .section-business {
-//     @include vertical-flex;
-
-//     figure {
-//         width: 130px;
-//         height: 130px;
-//     }
-// }
 
 // section testimonials
 #testimonials {

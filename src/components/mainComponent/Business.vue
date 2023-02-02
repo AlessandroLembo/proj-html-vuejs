@@ -35,11 +35,6 @@ export default {
             </div>
         </div>
     </div>
-    <div class="big-col">
-        <div class="card">
-
-        </div>
-    </div>
 </template>
 
 <style scoped lang="scss">
@@ -54,11 +49,33 @@ export default {
 }
 
 .section-business {
-    @include vertical-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $h100;
 
     figure {
         width: 130px;
         height: 130px;
+        padding-right: 1rem;
     }
+}
+
+.start-business {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    p {
+        padding: 0.5rem 0;
+    }
+
+    button {
+        background-color: #ff4450;
+        padding: 10px 15px;
+        border-radius: 15px;
+    }
+
+
 }
 </style>

@@ -167,8 +167,6 @@ a {
         padding: 10px 15px;
         border-radius: 15px;
         background-color: #ff4450;
-        border: none;
-        color: white;
     }
 
     a {
