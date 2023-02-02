@@ -1,11 +1,11 @@
 <script>
-import { courses } from '../data';
-import { courses_groups, categories } from '../data';
+import { courses_groups, categories, courses } from '../data';
 import CourseCard from './slider/CourseCard.vue';
 import JumboSlider from './slider/JumboSlider.vue';
+import UdemyAffiliate from './UdemyAffiliate.vue';
 export default {
     name: 'App Main',
-    components: { CourseCard, JumboSlider },
+    components: { CourseCard, JumboSlider, UdemyAffiliate },
     data() {
         return {
             index: 0,
@@ -76,6 +76,7 @@ export default {
         <figure>
             <img src="../assets/images/slide-1.jpg" alt="jumbo">
         </figure>
+        <udemy-affiliate></udemy-affiliate>
     </section>
 
     <!-- Course card component -->
