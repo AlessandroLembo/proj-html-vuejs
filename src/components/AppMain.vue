@@ -374,27 +374,6 @@ figure {
 
 // section popular courses
 
-/*
-<section id="carousel">
-        <div class="container">
-            <div>
-                <h1>Popular courses</h1>
-                <h3>Discover our most popular courses for self learning</h3>
-            </div>
-
-            <!-- slider -->
-            <jumbo-slider v-for="(group, i) in courses_groups" :key="group.id" :group="group"
-                v-show="i === index"></jumbo-slider>
-
-            <div class="btn">
-                <button @click="scrollToLeftGroup">prev</button>
-                <button @click="scrollToRightGroup">next</button>
-            </div>
-
-        </div>
-
-    </section>
-*/
 #carousel {
     background-color: aliceblue;
     padding-top: 3rem;

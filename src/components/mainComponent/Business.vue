@@ -44,7 +44,15 @@ export default {
 .big-col {
     flex-basis: 50%;
     padding: 1rem;
+    margin: 2rem 0;
     height: 280px;
+    @include vertical-flex;
+
+    .card {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        height: $h100;
+        padding: 1rem;
+    }
 
 }
 
