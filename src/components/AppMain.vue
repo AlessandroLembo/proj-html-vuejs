@@ -91,8 +91,14 @@ export default {
 
     <!-- section Limitless learning -->
     <section id="learning">
-        <div class="container row">
-            <h1>Limitless</h1>
+        <div class="container learning-claim">
+            <div class="text-claim">
+                <h1>Limitless learning, more possibilities</h1>
+                <p>Online courses open the opportunity for learning to almost anyone, regardless of their scheduling
+                    commitments</p>
+                <button>READ MORE</button>
+            </div>
+            <div></div>
 
         </div>
     </section>
@@ -248,7 +254,7 @@ figure {
 
 }
 
-// secction learning
+// section learning
 #learning {
     height: 500px;
     background-image: url('../assets/images/bg.png');
@@ -256,6 +262,37 @@ figure {
     background-size: cover;
     background-position: center;
 }
+
+.learning-claim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    .text-claim {
+        width: 40%;
+
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        p {
+            padding: 1rem 0;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #ff4450;
+            padding: 10px 15px;
+            border-radius: 20px;
+
+        }
+    }
+}
+
+
 
 // section recent courses
 #recent-courses {

@@ -47,4 +47,12 @@ export default {
 <style scoped lang="scss">
 @use '../../assets/scss/partials/variables' as *;
 @use '../../assets/scss/partials/verAlignm' as *;
+
+.star-list {
+    @include vertical-flex;
+
+    li {
+        color: rgb(158, 158, 42);
+    }
+}
 </style>

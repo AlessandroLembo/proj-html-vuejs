@@ -1,9 +1,11 @@
 <script>
 import { courses_groups } from '../../data';
+import TransformVote from './TransformVote.vue';
 export default {
+    components: { TransformVote },
     data() {
         return {
-            courses_groups
+            courses_groups,
         }
     },
     props: {
@@ -55,7 +57,9 @@ export default {
                         <div class="card-bottom">
                             <hr>
                             <div class="info-course">
-                                <div>{{ group.vote_average_1 }}</div>
+
+                                <transform-vote :vote="group.vote_average_1"></transform-vote>
+
                                 <div class="price">
                                     <div>{{ group.original_cost_1 }}</div>
                                     <div>{{ group.price_1 }}</div>
@@ -84,7 +88,9 @@ export default {
                         <div class="card-bottom">
                             <hr>
                             <div class="info-course">
-                                <div>{{ group.vote_average_2 }}</div>
+
+                                <transform-vote :vote="group.vote_average_2"></transform-vote>
+
                                 <div class="price">
                                     <div>{{ group.original_cost_2 }}</div>
                                     <div>{{ group.price_2 }}</div>
@@ -113,7 +119,9 @@ export default {
                         <div class="card-bottom">
                             <hr>
                             <div class="info-course">
-                                <div>{{ group.vote_average_3 }}</div>
+
+                                <transform-vote :vote="group.vote_average_3"></transform-vote>
+
                                 <div class="price">
                                     <div>{{ group.original_cost_3 }}</div>
                                     <div>{{ group.price_3 }}</div>
@@ -142,7 +150,8 @@ export default {
                         <div class="card-bottom">
                             <hr>
                             <div class="info-course">
-                                <div>{{ group.vote_average_4 }}</div>
+                                <transform-vote :vote="group.vote_average_4"></transform-vote>
+
                                 <div class="price">
                                     <div>{{ group.original_cost_4 }}</div>
                                     <div>{{ group.price_4 }}</div>
