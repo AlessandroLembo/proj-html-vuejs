@@ -15,32 +15,33 @@ export default {
             courses,
             courses_groups,
             categories,
-            jobs,
-            recent_courses: [],
-            development_courses: [],
+            jobs
+
 
         }
     },
     computed: {
         // get an array with recently courses searched
         showRecentCourse() {
+            const recent_courses = []
             this.courses.filter(course => {
                 if (course.recentCourse === true) {
-                    this.recent_courses.push(course);
+                    recent_courses.push(course);
                 }
 
             })
-            return this.recent_courses;
+            return recent_courses;
         },
 
         // get an array with all courses of development
         showDevelopmentCourses() {
+            const development_courses = []
             this.courses.filter(course => {
                 if (course.category === 'Development >') {
-                    this.development_courses.push(course);
+                    development_courses.push(course);
                 }
             })
-            return this.development_courses;
+            return development_courses;
 
         },
 
@@ -93,7 +94,7 @@ export default {
         <div class="container">
             <h1>Popular Development Courses</h1>
             <div class="row">
-                <course-card v-for="course in development_courses" :key="course.id" :course="course"></course-card>
+                <course-card v-for="course in showDevelopmentCourses" :key="course.id" :course="course"></course-card>
             </div>
         </div>
     </section>
@@ -121,7 +122,7 @@ export default {
         </nav>
         <!-- Using component to print course's cards -->
         <div class="row">
-            <course-card v-for="course in recent_courses" :key="course.id" :course="course"></course-card>
+            <course-card v-for="course in showRecentCourse" :key="course.id" :course="course"></course-card>
         </div>
         <div class="btn">
             <button class="btn-shaw">SHOW ALL</button>
