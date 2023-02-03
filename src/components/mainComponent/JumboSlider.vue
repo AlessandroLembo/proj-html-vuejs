@@ -1,14 +1,8 @@
 <script>
-import { courses_groups } from '../../data';
 import TransformVote from './TransformVote.vue';
 export default {
     name: 'Jumbo Slider',
     components: { TransformVote },
-    data() {
-        return {
-            courses_groups,
-        }
-    },
     props: {
         group: Object
     },

@@ -1,14 +1,8 @@
 <script>
-import { courses } from '../../data/';
 import TransformVote from './TransformVote.vue';
 export default {
     name: 'Course Card',
     components: { TransformVote },
-    data() {
-        return {
-            courses
-        }
-    },
     props: {
         course: Object
     },

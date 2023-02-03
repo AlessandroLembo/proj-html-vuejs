@@ -15,7 +15,7 @@ export default {
             courses,
             courses_groups,
             categories,
-            jobs
+            jobs,
 
 
         }
@@ -56,7 +56,7 @@ export default {
 
         // return at last group of courses
         returnToLastGroup() {
-            if (this.index < 0) this.index = this.courses_groups.length - 1;
+            if (this.index === 0) this.index = this.courses_groups.length - 1;
         },
 
         // scroll to left
@@ -164,8 +164,8 @@ export default {
                 v-show="i === index"></jumbo-slider>
 
             <div class="btn">
-                <button @click="scrollToLeftGroup">prev</button>
-                <button @click="scrollToRightGroup">next</button>
+                <button @click="scrollToLeftGroup">Prev</button>
+                <button @click="scrollToRightGroup">Next</button>
             </div>
 
         </div>

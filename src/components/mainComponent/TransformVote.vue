@@ -1,8 +1,6 @@
 <script>
-import { courses } from '../../data';
 export default {
     name: 'Transfrom Vote',
-    courses,
     props: {
         vote: Number
     },

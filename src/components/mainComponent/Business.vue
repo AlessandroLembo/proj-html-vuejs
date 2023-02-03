@@ -1,12 +1,6 @@
 <script>
-import { jobs } from '../../data';
 export default {
     name: 'Job card',
-    data() {
-        return {
-            jobs
-        }
-    },
     props: {
         job: Object
     },
