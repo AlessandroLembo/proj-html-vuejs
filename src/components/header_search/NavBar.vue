@@ -18,7 +18,7 @@ export default {
                 },
                 {
                     id: 4,
-                    link: 'Demos',
+                    link: 'Courses',
                 },
                 {
                     id: 5,

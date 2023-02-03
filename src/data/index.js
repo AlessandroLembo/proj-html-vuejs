@@ -1,6 +1,6 @@
 const courses = [
     {
-       id: 0, 
+       id: 1, 
        category: 'Development >',
        name: 'The Complete iOS 10 & Swift 3 Developer Course',
        vote_average: 4,
@@ -11,7 +11,7 @@ const courses = [
 
     },
     {
-        id: 1, 
+        id: 2, 
         category: 'Development >',
         name: 'Web Design for Beginners: Real World Coding in HTML & CSS',
         vote_average: 5,
@@ -21,7 +21,7 @@ const courses = [
         recentCourse: true
      },
      {
-        id: 2, 
+        id: 3, 
         category: 'Development >',
         name: 'GitHub Ultimate: Master Git and GitHub - Beginner to Expert',
         vote_average: 4,
@@ -31,7 +31,7 @@ const courses = [
         recentCourse: false
      },
      {
-        id: 3, 
+        id: 4, 
         category: 'Development >',
         name: 'The Complete iOS 11 & Swift Developer Course - Build 20 Apps',
         vote_average: 4,
@@ -42,7 +42,7 @@ const courses = [
 
      },
      {
-        id: 4, 
+        id: 5, 
         category: 'Development >',
         name: 'Android Java Masterclass - Become App Developer',
         vote_average: 4,
@@ -52,7 +52,7 @@ const courses = [
         recentCourse: false
      },
      {
-        id: 5, 
+        id: 6, 
         category: 'Development >',
         name: 'Xamarin Forms: Build Native Cross-plataform Apps with C#',
         vote_average: 4,
@@ -62,7 +62,7 @@ const courses = [
         recentCourse: false
      },
      {
-        id: 6, 
+        id: 7, 
         category: 'Design >',
         name: 'CSS - The complete Guide 2020 (incl. Flexbox, Grid & Sass)',
         vote_average: 5,
@@ -72,7 +72,7 @@ const courses = [
         recentCourse: true
      },
      {
-        id: 7, 
+        id: 8, 
         category: 'Design >',
         name: 'Digitally Painting Light and Color: Amateur to Master',
         vote_average: 4,
@@ -82,7 +82,7 @@ const courses = [
         recentCourse: true
      },
      {
-        id: 8, 
+        id: 9, 
         category: 'Arts & Crafts >',
         name: 'Become an Arabic Calligraphy Artist from Scratch',
         vote_average: 5,
@@ -92,7 +92,7 @@ const courses = [
         recentCourse: true
      },
      {
-        id: 9, 
+        id: 10, 
         category: 'Google >',
         name: 'Google Searching Ninja!',
         vote_average: 4,
@@ -102,7 +102,7 @@ const courses = [
         recentCourse: true
      },
      {
-        id: 10, 
+        id: 11, 
         category: 'Arts & Crafts >',
         name: 'Foundation for Mastering Watercolor Painting',
         vote_average: 5,
@@ -112,7 +112,7 @@ const courses = [
         recentCourse: true
      },
      {
-        id: 11, 
+        id: 12, 
         category: 'Food & Beverage >',
         name: 'Get Wine-Smart',
         vote_average: 4,
@@ -122,7 +122,7 @@ const courses = [
         recentCourse: true
      },
      {
-        id: 12, 
+        id: 13, 
         category: 'Arts & Crafts >',
         name: 'The Colored Pencil Drawing Course',
         vote_average: 4,
@@ -132,7 +132,7 @@ const courses = [
         recentCourse: true
      },
      {
-        id: 13, 
+        id: 14, 
         category: 'Arts & Crafts >',
         name: 'Paint Realistic Watercolor and Botanicals - STUDIO BASICS',
         vote_average: 4,
@@ -142,7 +142,7 @@ const courses = [
         recentCourse: true
      },
      {
-        id: 14, 
+        id: 15, 
         category: 'Arts & Crafts >',
         name: 'Mastering Brushstrokes - Part 1',
         vote_average: 5,
@@ -152,7 +152,7 @@ const courses = [
         recentCourse: true
      },
      {
-        id: 15, 
+        id: 16, 
         category: 'Arts & Crafts >',
         name: 'Paint Realistic Watercolour and Botanicals - MAGNOLIAS',
         vote_average: 5,

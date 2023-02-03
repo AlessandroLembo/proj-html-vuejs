@@ -28,8 +28,9 @@ export default {
                 if (course.recentCourse === true) {
                     this.recent_courses.push(course);
                 }
-                return this.recent_courses;
+
             })
+            return this.recent_courses;
         },
 
         // get an array with all courses of development
@@ -38,13 +39,15 @@ export default {
                 if (course.category === 'Development >') {
                     this.development_courses.push(course);
                 }
-                return this.development_courses;
             })
+            return this.development_courses;
+
         },
 
     },
 
     methods: {
+
         // return at first group of courses
         returnToFirstGroup() {
             if (this.index === this.courses_groups.length) this.index = 0;
