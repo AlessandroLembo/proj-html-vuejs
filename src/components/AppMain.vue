@@ -56,7 +56,7 @@ export default {
 
         // return at last group of courses
         returnToLastGroup() {
-            if (this.index === 0) this.index = this.courses_groups.length - 1;
+            if (this.index < 0) this.index = this.courses_groups.length - 1;
         },
 
         // scroll to left
