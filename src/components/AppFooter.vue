@@ -148,6 +148,10 @@ footer {
     @include vertical-flex;
     padding: 1rem 0;
 
+    * {
+        margin: 0 2px;
+    }
+
     figure {
         width: 35px;
         height: 35px;
