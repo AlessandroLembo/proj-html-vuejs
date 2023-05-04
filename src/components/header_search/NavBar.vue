@@ -43,7 +43,7 @@ export default {
         <font-awesome-icon class="social-icon" icon="fa-brands fa-instagram" />
         <font-awesome-icon class="social-icon" icon="fa-brands fa-linkedin" />
         <font-awesome-icon class="social-icon" icon="fa-brands fa-google-plus" />
-        <font-awesome-icon icon="fa-brands fa-youtube" />
+        <font-awesome-icon class="social-icon" icon="fa-brands fa-youtube" />
     </div>
 </template>
 
@@ -70,6 +70,7 @@ export default {
     .social-icon {
         padding: 0 5px;
         color: rgba(0, 0, 0, 0.7);
+        cursor: pointer;
     }
 }
 </style>

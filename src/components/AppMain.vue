@@ -118,7 +118,7 @@ export default {
 
         <h1 id="recent-courses">Recent courses</h1>
         <nav class="courses">
-            <div v-for="category in categories" :key="category.id">{{ category.category }}</div>
+            <div v-for="category in categories" :key="category.id" class="category-courses">{{ category.category }}</div>
         </nav>
         <!-- Using component to print course's cards -->
         <div class="row">
@@ -207,8 +207,6 @@ export default {
             </div>
         </div>
     </section>
-
-
 </template>
 
 <style scoped lang="scss">
@@ -317,6 +315,10 @@ figure {
     @include vertical-flex;
     justify-content: center;
     height: 70px;
+
+    .category-courses {
+        cursor: pointer;
+    }
 
     div {
         padding: 0 1rem;

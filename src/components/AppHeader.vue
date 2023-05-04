@@ -84,7 +84,6 @@ export default {
             </div>
         </div>
     </header>
-
 </template>
 
 <style scoped lang="scss">
@@ -133,6 +132,7 @@ header {
 
     img {
         height: $h100;
+        cursor: pointer;
     }
 }
 
@@ -170,6 +170,10 @@ a {
 
     a {
         margin-left: 5px;
+    }
+
+    .fa-bookmark {
+        cursor: pointer;
     }
 }
 

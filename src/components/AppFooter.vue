@@ -118,6 +118,7 @@ footer {
 
 .email {
     color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
 }
 
 .flex-icon {
@@ -129,6 +130,7 @@ footer {
         font-size: 40px;
         height: 50px;
         padding: 10px 0;
+        cursor: pointer;
     }
 }
 
@@ -139,6 +141,7 @@ footer {
 
     img {
         height: $h100;
+        cursor: pointer;
     }
 }
 

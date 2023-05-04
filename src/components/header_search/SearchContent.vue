@@ -35,6 +35,10 @@ export default {
 .filter-search {
     @include vertical-flex;
     flex-basis: 40%;
+
+    .fa-bars {
+        cursor: pointer;
+    }
 }
 
 #category {
