@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: 'Transfrom Vote',
+    name: 'Transform Vote',
     props: {
         vote: Number
     },
